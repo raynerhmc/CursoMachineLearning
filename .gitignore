@@ -1,2 +1,37 @@
-/Default/
-/Debug/
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+PatternRecognitionProject/latex/
+PatternRecognitionProject/Debug/
+*.DS_Store
+*.tmp
+*.bak
+*.swp
+*.d
+*.o
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+*.project
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin 
+.target
+
+# TeXlipse plugin
+.texlipse
