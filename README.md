@@ -20,9 +20,13 @@ Pregunta: Cuál valor de alpha cree usted que consigue converger más rápido?
 # Segunda Tarea:
 
 a) Implementar la Función Normal y probarlo en el archivo PrimeraSemana/Datos/univariate_reg_data.txt de este github, y ver que los parámetros Theta obtenidos son iguales a los obtenidos por el algoritmo Gradient Descent para las siguientes funciones hipótesis:
+
 h(Theta) = theta_0 + x_1 * theta_1;
+
 h(Theta) = theta_0 + x_1 * theta_1 + (x_1 ^ 2) * theta_2; 
+
 h(Theta) = theta_0 + x_1 * theta_1 + (x_1 ^ 2) * theta_2; + (x_1 ^ 3) * theta_3;
+
 h(Theta) = theta_0 + x_1 * theta_1 + sqrt(x_1) * theta_2;
 
 Para hallar la inversa de la matriz en Matlab/octave/python/R, utlizar la función  'pinv', la cual calcula evita errores de no invertivilidad de matrices. 

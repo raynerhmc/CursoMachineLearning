@@ -37,7 +37,7 @@ size(X)
 initial_theta = zeros(size(X, 2), 1);
 
 alpha = 1;
-num_iters = 10000;
+num_iters = 100;
 
 [Theta, Jcost] = GradientDescentInLogisticReg(X, y, alpha, num_iters);
 
