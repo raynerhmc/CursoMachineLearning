@@ -1,0 +1,14 @@
+Link utiles
+
++ Datasets, problemas y concursos de regresion, clasificación y aprendizaje supervisado:
+	- https://www.kaggle.com/
+	- http://archive.ics.uci.edu/ml/
+	- http://www.ic.unicamp.br/~rocha/teaching/2015s2/mo444/assignments/2015s2-mo444-assignment-01.pdf
+	
++ Diapositivas y tareas de cursos online
+	- http://www.dmi.unict.it/farinella/SMM/CourseSchedule.html
+	- https://www.coursera.org/learn/machine-learning
+	- http://www.cs.cmu.edu/~tom/10701_sp11/hws.shtml
+
++ Material Bibliografico 
+	- 
