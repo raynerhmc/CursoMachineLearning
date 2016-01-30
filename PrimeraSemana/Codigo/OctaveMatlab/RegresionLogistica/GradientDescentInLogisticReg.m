@@ -4,7 +4,7 @@ m = length(y); % Numero de ejemplos de entrenamiento
 Theta = zeros(size(X, 2), 1); % Almacena los valores finales de los parametros Theta
 J_history = zeros(1, num_iters); % Almacena el historico de la funcion costo J
 for iter = 1:num_iters
-    if mod( iter - 1, 10 ) == 0
+    if mod( iter - 1, 1000 ) == 0
         % Plot Boundary
         close all;
         plotDecisionBoundary(Theta, X, y);

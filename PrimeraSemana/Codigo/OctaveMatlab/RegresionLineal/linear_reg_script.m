@@ -11,5 +11,5 @@ size(y);
 
 
 %gradient_descent_one_var(X, y, 0.5, 600);
-Gradient_descent_mul_var(X, y, 1, 6000, 60);
+Gradient_descent_mul_var(X, y, 1, 6000, 100 );
 %FuncionNormal(X, y);

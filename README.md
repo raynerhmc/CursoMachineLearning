@@ -39,3 +39,31 @@ Probar distintas hipotesis, e encontrar aquella que mejores resultados da. (Most
 Pregunta 1: A mas variables en la función hipótesis, mayor número de iteraciones debe dar el algoritmo para converger? Considerando que en todas ellas se utiliza el mismo alfa.
 
 Pregunta 2: Cree usted que se puede usar la función normal en la regresion logística?
+
+# [FINALIZADO] Ya no se puede enviar mas la tarea 1 y 2.
+
+# Tercera Tarea [OPCIONAL]:
+Consiste en probar la regularización con un parámetro  muy pequeño, normal, muy grande  en los mismos archivos de datos de la tarea 1 y 2. 
+
+Que sucede cuando tenemos un lambda muy pequeño?, y con uno muy grande?. Mostrar los graficos de regresion lineal  y regresion logistica ( frontera de decisión) obtenidos.
+
+# Cuarta Tarea:
+a) En la carpeta SegundaSemana/Codigo/Matlab Se encuentra el código de redes neuronales, pertenece a un ejercicio de programación de  Andrew Ng (http://www.andrewng.org/). El mismo se encuentra casi resuelto. El archivo principal esta en el archivo ex4.m, el cual está dividido por una série de pasos. 
+
+Su tarea  en implementar el paso 8 (Implement Regularization). Que consiste en modificar el archivo nnCostFunction.m (donde se implementa el algoritmo back Propagation y se obtiene la función Costo ) y agregarle el término de regularización a las variables Theta1_grad(:) y Theta2_grad(:). La fórmula de ese término se encuentra en la última diapositiva del archivo: "SegundaSemana/Contenido/1-Redes Neuronales.pdf"
+
+El código está bien documentado y en ex4.pdf está descrito lo que hace cada función especificamente. Y dá ayudas para obtener una correcta implementación.
+
+Algunas cosas que quiero aclarar  son las siguientes: 
+ - Para probar si su regularización esta bien hecha, 
+ - El archivo  fmincg.m   contiene un algoritmo similar al Gradient Descent que  utiliza la función nnCostFunction.m, lo que devuelve esta función obviamente son los pesos Theta optimos que minimizan la función Costo (J).
+ - Como lo dije en clases, al Gradient Descent u otros algoritmos de optimización similares solo les interesa la versión linearizada de los pesos Theta con sus respectivas gradientes. Por lo tanto, en casi todo el código se trabaja de esa forma. Por otro lado el algoritmo Back Propagation (implementado en nnCostFunction.m) utiliza una versión matricial de los pesos Theta, por lo que al inicio de esa función aparece el método 'reshape', que recibe una version linearizada y lo transforma a su forma matricial. Finalmente esa misma función retorna los gradientes de THeta linearizados.
+ - Nuevamente mas informaciones en el archivo ex4.pdf.
+ - Entiendan el código antes de hacer alguna cosa. 
+
+
+b) Implementar el paso 12 (70% training, 30% testing) y 13 (Cross Validation) en ex4.m.  En el mismo archicvo ex4.m se detalla lo que tiene que ser hecho. 
+
+Hacer un relatorio para la tarea a) y b) escribiendo al menos el código utilizado, y para b) la exactitud( accuracy) obtenida.
+
+c) [Opcional] Para el paso 13 crear una matriz de confusión. Y responder la pregunta: Que clase (1-10) es la que falla mas veces?.

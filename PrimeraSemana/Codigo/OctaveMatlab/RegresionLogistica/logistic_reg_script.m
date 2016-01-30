@@ -5,7 +5,7 @@ clc;
 %  The first two columns contains the X values and the third column
 %  contains the label (y).
 
-data = load('../../../Datos/linea_dos_clases.txt');
+data = load('../../../Datos/circulo_dos_clases.txt');
 X = data(:, [1, 2]); y = data(:, 3);
 
 %  normalizando x1 y x2.
@@ -37,7 +37,7 @@ size(X)
 initial_theta = zeros(size(X, 2), 1);
 
 alpha = 1;
-num_iters = 100;
+num_iters = 10000;
 
 [Theta, Jcost] = GradientDescentInLogisticReg(X, y, alpha, num_iters);
 
