@@ -10,5 +10,11 @@ Link utiles
 	- https://www.coursera.org/learn/machine-learning
 	- http://www.cs.cmu.edu/~tom/10701_sp11/hws.shtml
 
-+ Material Bibliografico 
-	- 
++ Libros
+	- 	Titulo: The Elements of Statistical Learning: Data Mining, Inference, and Prediction.  
+		Autores: Trevor Hastie, Robert Tibshirani, Jerome Friedman 
+		Link 2nd Edition: http://statweb.stanford.edu/~tibs/ElemStatLearn/
+
+	-	Titulo: Pattern Recognition and Machine Learning
+		Autor: Christopher M. Bishop
+		Link de algunos capitulos del libro: http://research.microsoft.com/en-us/um/people/cmbishop/prml/
