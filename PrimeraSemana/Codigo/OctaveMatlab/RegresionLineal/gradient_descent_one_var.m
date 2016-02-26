@@ -11,33 +11,44 @@
     %Para la hipotesis: h_theta = theta_0 + theta_1 * x.
     theta_0 = 0;  
     theta_1 = 0;
-    
+    historial_J = zeros(1, num_iters);
     for iter = 1:num_iters
         % Para plotear grafico
-        if mod( iter - 1, 50 ) == 0 
-            h_y = theta_0 + theta_1 * x;
-            plot(x, y, '*');
-            hold on;
-            plot(x, h_y, 'r');
-            hold off;
-            pause();
-        end
+%         if mod( iter - 1, 50 ) == 0 
+%             h_y = theta_0 + theta_1 * x;
+%             plot(x, y, '*');
+%             hold on;
+%             plot(x, h_y, 'r');
+%             hold off;
+%             pause();
+%         end
         
         % Variables auxiliares donde se almacena el valor de las derivadas parciales de la funcion costo.
         sum_0 = 0;
         sum_1 = 0;
+        sum_square = 0;
         for i = 1:m
             h_theta = theta_0  + theta_1 * x(i);
             sum_0 = sum_0 + ( h_theta - y(i) );
             sum_1 = sum_1 + ( ( h_theta - y(i) ) * x(i) ); 
+            sum_square = sum_square + ( ( h_theta - y(i) ) ^ 2 );
         end
         % Actualizacion simultanea de los parametros theta_0 y theta_1
         theta_0 = theta_0 - alpha * ( 1.0 / m ) * sum_0;
         theta_1 = theta_1 - alpha * ( 1.0 / m ) * sum_1;
+        historial_J(iter) = (1.0 / (2 * m) ) * sum_square;
     end
-    
+    set(gca,'fontsize',16)
     plot(x, y, '*');
+    xlabel('x','FontSize',19,'FontWeight','bold') % x-axis label
+    ylabel('y','FontSize',19,'FontWeight','bold') % y-axis label
     hold on;
     h_y = theta_0 + theta_1 * x;
-    plot(x, h_y, 'g');
-
+    plot(x, h_y, 'r');
+    
+    figure,
+    set(gca,'fontsize',16)
+    plot(1:num_iters, historial_J,'LineWidth',2);
+    xlabel('Numero de iteraciones','FontSize',19,'FontWeight','bold') % x-axis label
+    ylabel('Funcion Costo (J)','FontSize',19,'FontWeight','bold') % y-axis label
+    historial_J(1000)
